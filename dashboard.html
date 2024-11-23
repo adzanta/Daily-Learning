@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Dashboard</h1>
+        <p>Review student quiz results</p>
+
+        <!-- Tabel hasil kuis -->
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Student Name</th>
+                    <th>Quiz Title</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data hasil kuis akan diisi oleh JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button onclick="clearResults()">Clear Results</button>
+            <button onclick="refreshPage()">Refresh</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

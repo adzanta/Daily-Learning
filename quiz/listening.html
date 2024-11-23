@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Quiz</title>
+    <link rel="stylesheet" href="listening.css"> <!-- Hubungkan ke CSS -->
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-header" class="quiz-header">
+            <h2>Listening Quiz</h2>
+            <p>Listen carefully and answer the questions below:</p>
+        </div>
+        <div class="quiz-content">
+            <!-- Audio player -->
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="../audio/listening.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <!-- Soal -->
+            <div id="quiz-question" class="quiz-question"></div>
+            
+            <!-- Opsi Jawaban -->
+            <div id="quiz-options" class="quiz-options"></div>
+            
+            <!-- Tombol Next -->
+            <button class="btn-submit" id="next-button" onclick="nextQuestion()">Next</button>
+            
+            <!-- Hasil -->
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <script src="listening.js"></script> <!-- Hubungkan ke JS -->
+</body>
+</html>
